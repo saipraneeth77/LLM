@@ -1,0 +1,67 @@
+{
+    "metadata": {
+        "compilerVersion": 0,
+        "author": "",
+        "automationTarget": "",
+        "objectReferences": {
+            "H2O": "liquid-1",
+            "Beaker 250ml 1": "container-2",
+            "Volumetric Flask 500ml 1": "container-3",
+            "Storage Flask Point": "location-1",
+            "location 1": "location-0",
+            "Active Flask Point": "location-2",
+            "NaOH": "liquid-2",
+            "NaCl": "liquid-0"
+        },
+        "validActions": [
+            "add",
+            "move",
+            "stir",
+            "measure"
+        ],
+        "measure": [
+            "pH",
+            "Weight"
+        ]
+    },
+    "actions": [
+        {
+            "action": "add",
+            "target": "Volumetric Flask 500ml 1",
+            "parameter": "Beaker 250ml 1"
+        },
+        {
+            "action": "add",
+            "target": "Beaker 250ml 1",
+            "parameter": "H2O",
+            "quantity": {
+                "value": "5",
+                "unit": "ml"
+            }
+        },
+        {
+            "action": "measure",
+            "target": "Beaker 250ml 1",
+            "parameter": "pH"
+        },
+        {
+            "action": "add",
+            "target": "Beaker 250ml 1",
+            "parameter": "NaOH",
+            "quantity": {
+                "value": "20",
+                "unit": "ml"
+            }
+        },
+        {
+            "action": "move",
+            "target": "Beaker 250ml 1",
+            "parameter": "location 1"
+        },
+        {
+            "action": "move",
+            "target": "Beaker 250ml 1",
+            "parameter": "Storage Flask Point"
+        }
+    ]
+}
